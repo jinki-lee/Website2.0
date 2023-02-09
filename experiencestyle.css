@@ -86,37 +86,4 @@ h1{
       margin-bottom:0;
     }
 
-      /* ----------------------------------- content boxes */
 
-  .exp {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-bottom: 40px;
-}
-.chat-bubble {
-  border-radius: 5px;
-  box-shadow: 0 4px 6px 0 rgb(0 0 0 / 10%), 0 4px 20px 0 rgb(0 0 0 / 10%);
-  height: 100%;
-  background-color: #FAF9F6;
-}
-
-
-.exp img {
-border-radius: 100%;
-max-width: 80px;
-max-height: 80px;
-}
-
-img {
-overflow-clip-margin: content-box;
-overflow: clip;
-}
-
-.chat-time {
-float: right;
-
-}
-
-/* ----------------------------------- */
