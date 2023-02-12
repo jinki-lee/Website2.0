@@ -79,26 +79,44 @@
       </div>
 
 
-    <form action="#" class="contact_form">
+      <form id="emailForm">
+
         <div class="row">
 
         <div class="col-md-4 mb-3">
-            <input type="text" class="form-control" name="name" id="name" placeholder="First Name">
+          <label for="firstName">First Name:</label>
+          <input class="form-control" type="text" id="firstName" name="firstName" required placeholder="Joe">
         </div>
 
         <div class="col-md-4 mb-3">
-            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+          <label for="lastName">Last Name:</label>
+          <input class="form-control" type="text" id="lastName" name="lastName" required placeholder="Mama">
         </div>
 
-        <div class="mb-3">
-            <input type="email" class="form-control" name="email" id="email" placeholder="Email Address" pattern="[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+">
+        <div class="col-md-6 mb-3">
+          <label for="emailAddress">Email Address:</label>
+          <input class="form-control" type="email" id="emailAddress" name="emailAddress" required placeholder="Please enter your email address">
         </div>
 
+        <div class="col-md-2 mb-3">
+          <label for="phoneNumber">Phone Number:</label>
+          <input class="form-control"type="tel" id="phoneNumber" name="phoneNumber" placeholder="Optional">
+        </div>
+
+        <div class="col-md-6 mb-3">
+          <label for="subject">Subject:</label>
+          <input class="form-control" type="text" id="subject" name="subject" required placeholder="Email Subject">
+        </div>
+
+
         <div class="mb-3">
-            <textarea class="form-control" id="message" name="messasge" rows="5" placeholder="Message"></textarea>
+          <label for="message">Type Message Below:</label>
+          <textarea class="form-control" id="message" name="message" rows="5" placeholder="What is Lorem Ipsum?
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." required></textarea>
         </div>
     </div> <!--End of Row-->
-        <button class="btn btn-primary" onclick="sendMail()" disabled>Submit</button>
+
+        <input type="submit" value="Submit" class="btn btn-primary" >
     </form>
 
     
