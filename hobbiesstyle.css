@@ -3,6 +3,26 @@ img{
     max-width: 450px;
   }
   
+/* Instagram */
+.instagram-button {
+    background-color:   #6FB3B8;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .instagram-button:hover {
+    background-color:  #BADFE7;
+  }
+  
+  .fa-instagram {
+    margin-right: 10px;
+  }
+
   /* BODY */
   /* 
   #388087
